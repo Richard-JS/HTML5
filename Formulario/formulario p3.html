@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário parte 03 checkbox radio </title>
+    <style>
+        .quebra{
+            display: block;
+           
+        }
+        .espaco{
+            margin-bottom:15px; ;
+
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{    border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eeeeee;
+        }
+        
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+
+        <label >Username:</label> 
+        <input class="espaco quebra" type="text" name="nome" maxlength="20" size="22">
+
+        <label>Senha:</label>
+        <input class="espaco quebra" type="password" name="f_senha"  maxlength="20" size="22" >
+
+        <label class="quebra" >Esporte favoritos:</label>
+        <input type="checkbox" name="f_esporte" value="futebol" checked>Futebol
+        <input type="checkbox" name="f_esporte" value="basquete">Basquete
+        <input type="checkbox" name="f_esporte" value="natação">Natação
+
+        <label class="quebra espaco_t">Possui Carro?</label>
+        <input type="radio" name="f_carro" value="s"checked>Sim
+        <input type="radio" name="f_carro" value="n">Não
+
+
+        <input class="quebra espaco_t" type="submit" name="f_entrar" value="Entrar">
+
+        
+    
+    </form>
+</body>
+</html>

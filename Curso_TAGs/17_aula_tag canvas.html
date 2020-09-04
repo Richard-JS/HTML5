@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17_aula_tag canvas </title>
+</head>
+    <style type="">
+      canvas{
+        border: 1px #000 solid;
+    }
+     </style>
+    <script>
+        function desenha(){
+            var canvas = document.getElementById('teladesenho');
+            var ctx = canvas.getContext('2d');
+            ctx.fillRect(25, 25, 100, 100);
+        }
+    </script>
+    <body>
+       <canvas id="teladesenho" width="500px" height="500px">
+        Seu browser não tem suporte ao elemento canvas!
+      </canvas>
+      <script>desenha();</script>
+    </body>
+</html>

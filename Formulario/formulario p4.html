@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario parte 04 date time </title>
+    <style>
+    .quebra{
+        display: block;
+        margin: 0px 0px 10px 0px;
+    } 
+    form{    
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        
+    }
+    
+    .espaco_t{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label class="quebra"> Hora: </label>
+        <input type="time" name="data" min="09:00" max="17:00" required>
+
+        <input class="espace_t quebra" type="submit" value="Enviar">
+
+        <label class="quebra"> Date: </label>
+        <input type="date" name="data" min="09:00" max="17:00" required>
+
+        <label class="quebra"> Data e Hora: </label>
+        <input type="datetime-local" name="datetime-local" min="09:00" max="17:00" required>
+
+        <input class="espace_t quebra" type="submit" value="Enviar">
+    </form>
+</body>
+</html>

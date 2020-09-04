@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario parte 10 - fieldset</title>
+
+    <style>
+        form{    
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        
+        }
+        
+        .espaco{
+            margin-top: 10px;
+        }
+
+        .quebra{
+            display: block;
+        }
+        .espaco_t {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="GET">
+
+        <fieldset>
+            <legend>Dados 1:</legend>
+                <label for="f_nome" class="quebra">Nome:</label>
+                <input type="text" name="f_nome" id="f_nome" class="quebra"> <br>
+
+                <label for ="f_telefone" >Telefone:</label><br>
+                <input  type="tel" name="f_telefone" id="f_telefone" placeholder="(xx)99999-9999">
+
+                <label for="f_name" class="quebra espaco">Possui carro?</label>
+                <input  type="radio" name="f_carro" id="f_carro" value="sim" checked>SIM <br>
+                <input  type="radio" name="f_carro" value="nao">Não <br>
+
+
+                <label for="f_nome" class="quebra espaco">Possui casa própria?</label>
+                <input  type="radio" name="f_casa" value="sim">SIM <br>
+                <input  type="radio" name="f_casa" value="nao">Não 
+
+                <input class="quebra espaco" type="submit" value="Enviar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados 2:</legend>
+            <label for="f_nome" class="quebra">Nome:</label>
+            <input type="text" name="f_nome" id="f_nome" class="quebra"> <br>
+
+            <label for ="f_telefone" >Telefone:</label><br>
+            <input  type="tel" name="f_telefone" id="f_telefone" placeholder="(xx)99999-9999">
+
+            <label for="f_name" class="quebra espaco">Possui carro?</label>
+            <input  type="radio" name="f_carro" id="f_carro" value="sim" checked>SIM <br>
+            <input  type="radio" name="f_carro" value="nao">Não
+
+
+            <label for="f_nome" class="quebra espaco">Possui casa própria?</label>
+            <input  type="radio" name="f_casa" value="sim">SIM <br>
+            <input  type="radio" name="f_casa" value="nao">Não 
+
+            <input class="quebra espaco" type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 20 - tag details e summary </title>
+</head>
+<style>
+    /*mudando apenas a cor da setinha*/
+    summary::-webkit-details-marker{color: brown;}
+    /*mudando a cor da setinha quando expandir */
+    details[open] summary::-webkit-details-marker{
+        color: chartreuse;
+    }
+</style>
+<body>
+    <details>
+       <summary>Cursos do nosso canal</summary> 
+        <article>
+            <p>HTML5</p>
+            <P>HTML</P> 
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>C++</p>
+            <p>Qtcreator</p>
+            <p>Arduino</p>
+        </article>
+        <article>
+            <p>HTML5</p>
+            <P>HTML</P> 
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>C++</p>
+            <p>Qtcreator</p>
+            <p>Arduino</p>
+        </article>
+    </details>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário parte 02 submit reset button</title>
+    <style>
+        input{
+            display: block;
+        }
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eeeeee;
+        }
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get"> <!--so com php para tratar e guarda no banco de dados-->
+        <label >Nome:</label> 
+        <input type="text" name="nome">
+
+        <div id="dv_btns">
+            <input type="submit" name="f_btn_enviar" value="gravar" > <!--envio dos dados-->
+            <input type="reset" name="f_btn_limpar" value="limpar" > <!--limpeza dos campos-->
+            <input type="button" name="f_btn_nada" value="nada" ><!-- nao tem comportamento pre definido-->
+        </div>
+        
+    </form>
+</body>
+</html>

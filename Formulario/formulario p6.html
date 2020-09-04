@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario parte 04 date time </title>
+    <style>
+    .quebra{
+        display: block;
+        margin: 0px 0px 10px 0px;
+    } 
+    form{    
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        
+    }
+    
+    .espaco_t{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="f_cadastro"  action="#" method="GET">
+
+        <label class="quebra"> Senha: </label>
+        <input type="password" name="password" pattern="[a-zA-Z0-9]{6}" placeholder="Senha de 6 digitos">
+
+        <label class="quebra"> Digite número do telefone: </label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(99)99999-9999" >
+
+        <label class="quebra espaco_t"> Digite um número:</label>
+        <input  class="quebra " type="number" name="F_numero" max= 100 min= 00 >
+        <!--posso colocar step para conta de 2 em 2 numeros-->
+
+       
+        <label class="quebra"> Vamos pesquisar:</label>
+        <input type="search">
+
+        <input class="espace quebra" type="submit" value="Enviar">
+    </form>
+</body>
+</html>

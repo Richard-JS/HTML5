@@ -1,0 +1,140 @@
+<!--Position : static que é elemento padrao -->
+<!--Position :absolute que posiciona elemento de acordo com a janela desde que seu elemento pai seja static, 
+    se o elemento pai nao for static ele posicionado em relação elemento pai -->
+<!--Position :relative relacionado sempre em relação elemento pai -->
+<!-- Postion : fixed ele fica fixo na janela e não ao elemento pai -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 25 - tag div parte 2 </title>
+    <style>
+        body{
+            
+            margin: 0px;
+        }
+        *{
+            box-sizing:border-box ;
+            padding:0px;
+        }
+        .main{
+            border:1px dotted #f00;
+            margin: auto;/*centralizar main */
+            width: 960px;
+        }
+        #cabecalho, #corpo, #rodape{
+            /*dotted para fazer margem */
+            border:1px dotted #aaaaaa
+        }
+
+        #cabecalho{
+            /*position: static todos os cabeçalhos seu postion padrao é static,não conseguimos mover*/
+            /*para gente posicionar vamos usar 4 elemetos*/
+            /*left e height configuram eixo x*/
+            position: absolute;
+            left:0px ;/* margen esquerda ,então quando maior valor mais para direita ele vai */
+            /*height: margen direita ,então quando maior valor mais para esquerda ele vai */
+                
+            /*top e bottom configuram eixo y*/
+            
+            top: 0px; /*distancia do eixo superior ou parte de cima para elemento,então quando maior valor mais para baixo vai ficar */
+            /* bottom distancia do eixo inferior ou parte de baixo para elemento,então quando maior valor mais para cima vai ficar */
+            width: 100%; /*100% da janela, ta aproveitando toda janela*/
+            height: 100px;
+        }
+        #corpo{
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 100%;
+            height: 699px;
+        }
+        #caixa1, #caixa2, #caixa3{/*comandar todas as caixas a mesmo tempo*/
+            width: 150px;
+            height: 70px;
+
+        }   
+        #caixa1{
+            position: absolute;
+            top:0px;
+            left: 0px;
+            background-color: #f00 ;
+            color: #ffffff;
+            border: 1px solid #000000 ;
+        }
+        #caixa2{
+            position: relative;
+            top:0px;
+            left: 0px;
+            background-color: #0f0;
+            color: #ffffff;
+            border: 1px solid #000000 ;
+        }
+        #caixa3{
+            position: fixed;
+            bottom:0px;
+            left: 0px;
+            background-color: #0000ff;
+            color: #ffffff;
+            border: 1px solid #000000 ;
+            z-index: 100;   /*para colocar caixa 3 na frente do rodape*/
+        }
+        #rodape{
+            position: absolute;
+            top: 799px;
+            left: 0px;
+            width: 100%;
+            height: 90px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+    </style>
+
+</head>
+<body>
+        <div id="cabecalho">
+            <div class="main">
+                <h1>CURSOS</h1>
+            </div>
+        </div>
+    
+        <div id="corpo">
+
+            <div class="main">
+
+                <div id="caixa1">
+                    <h3>Caixa 1 </h3>
+                </div>
+                
+                <div id="caixa2">
+                    <h3>Caixa 2 </h3>
+                </div>
+
+                <div id="caixa3">
+                    <h3>Caixa 3 </h3>
+                </div>
+        
+
+                <p>Nesta aula vamos aprender a manipulas divs, usando position, top, width, height.</p>
+
+                <p>Se ainda não for inscrito em nosso canal, se inscreva e clique no sininho.</p>
+
+                <p>Siga-nos na nossa rede sociais, endereços na descrição do video</p>
+            </div>
+        </div>
+
+        <div id="rodape">
+            <div class="main">
+                <p>www.youtube.com/cfbcursos</p>
+                <p>cfbcursos.com</p>
+            </div>
+        </div>
+</body>
+</html>

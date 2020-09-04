@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario parte 08 - select e option </title>
+    <style>
+    .quebra{
+        display: block;
+        margin: 0px 0px 10px 0px;
+    } 
+    form{    
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        
+    }
+    
+    .espaco_t{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="f_cadastro"  action="#" method="GET">
+
+
+        <!--selecionando mais de um com multiple-->
+        <!--podemos adicionar size para deixar quantos elementos vai fica visivel-->
+        <!---->
+        <select name="f_cor" multiple>
+            <option>Preto</option>
+            <option>Branco</option>
+            <option>Vermelho</option>
+            <option>Verde</option>
+            <option>Azul</option>
+        </select>
+
+        <select name="f_genero">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+        <select name="objeto">
+            <option value="ip3d7">Impressora 3D</option>
+            <option value="t98">Tv Smart 98 polegadas</option>
+        </select>
+
+        <input class="espace quebra" type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário parte 09 - list e datalist</title>
+    <style>
+        form{    
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        
+        }
+        
+        .espaco{
+            margin-top: 10px;
+        }
+
+        .quebra{
+            display: block;
+        }
+        .espaco_t {
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form name = "f_cadastro" action="#" method="GET">
+        
+    <input list="f_transportes" name="f_cor">
+
+    <datalist id="f_cores">
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
+        <option value="blue">azul</option>
+        <option value="yeloow">amarelo</option>
+        <option value="white">branco</option>
+        <option value="Beige">bege</option>
+
+    </datalist>
+
+    <datalist id="f_transportes">
+        <option value="01">Carro</option>
+        <option value="02">Avião</option>
+        <option value="03">Navio</option>
+        <option value="04">Motocicleta</option>
+    
+    </datalist>
+
+    <input class = "espaco quebra" type="submit" name="enviar" value="Enviar">
+    
+    
+    
+    </form>
+</body>
+</html>

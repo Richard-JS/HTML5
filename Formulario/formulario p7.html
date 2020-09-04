@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario parte 07 - Input file e url </title>
+    <style>
+    .quebra{
+        display: block;
+        margin: 0px 0px 10px 0px;
+    } 
+    form{    
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #eeeeee;
+        
+    }
+    
+    .espaco_t{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="f_cadastro"  action="#" method="GET" enctype="multipart/form-data">
+
+        <label class="quebra"> Selecione o arquivo: </label>
+        <input type="file" name="f_arquivo" multiple accept=".jpg,.png" >
+
+        <label class="quebra"> Digite a url: </label>
+        <input type="url" name="f_url" placeholder="https://wwww.google.com" >
+
+        <input class="espace quebra" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
